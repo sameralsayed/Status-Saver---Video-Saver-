@@ -1,0 +1,231 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Status Saver - Video Saver: Free online tool to download and save WhatsApp Status photos and videos in HD quality. View statuses without being seen, save to gallery, and enjoy offline. Fast, clean, lightweight status downloader.">
+    <meta name="keywords" content="status saver, whatsapp status downloader, video saver, photo status saver, save whatsapp status, hd status download, whatsapp story saver, status video downloader">
+    <meta name="author" content="SAMER SAEID">
+    <title>Status Saver - Video Saver | WhatsApp Status Downloader</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background: linear-gradient(90deg, #22c55e, #16a34a);">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-3" href="#">
+                <i class="fas fa-save me-2"></i>Status Saver
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#howto">How it Works</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#media">Media Tabs</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero d-flex align-items-center min-vh-100 text-white">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <span class="badge bg-white text-success px-4 py-2 mb-3 fs-6">100M+ Downloads Inspired • Free • HD Quality</span>
+                    <h1 class="display-3 fw-bold mb-4">Save WhatsApp Status Photos &amp; Videos in <span class="text-warning">HD</span></h1>
+                    <p class="lead mb-5">Download your friends' statuses quickly without them knowing they've been seen. Clean interface, built-in player, and easy sharing — all in your browser.</p>
+                    
+                    <div class="input-group input-group-lg shadow-lg mb-4">
+                        <input type="text" id="urlInput" class="form-control border-0 py-3" placeholder="Paste WhatsApp Status or media link..." aria-label="Paste status link">
+                        <button class="btn btn-warning px-5 fw-bold" onclick="saveStatus()">Save Status</button>
+                    </div>
+                    
+                    <div class="d-flex flex-wrap gap-3 text-white-50 small">
+                        <div><i class="fas fa-check-circle text-white"></i> View Without Seen</div>
+                        <div><i class="fas fa-check-circle text-white"></i> Images &amp; Videos Tabs</div>
+                        <div><i class="fas fa-check-circle text-white"></i> HD Download</div>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-none d-lg-block">
+                    <div class="phone-mockup mx-auto">
+                        <img src="https://via.placeholder.com/320x620/166534/ffffff?text=Status+Saver+Mockup" alt="Status Saver App Mockup" class="img-fluid rounded-5 shadow">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="display-5 fw-bold text-success">Key Features</h2>
+                <p class="lead text-muted">Just like the popular Android app — clean, fast, and powerful</p>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm feature-card p-4 text-center">
+                        <i class="fas fa-eye-slash fa-3x text-success mb-4"></i>
+                        <h5>View Without Seen</h5>
+                        <p class="text-muted">Watch and save statuses secretly without marking them as viewed.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm feature-card p-4 text-center">
+                        <i class="fas fa-bolt fa-3x text-success mb-4"></i>
+                        <h5>Super Fast &amp; Lightweight</h5>
+                        <p class="text-muted">Download in seconds with a clean and simple interface.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm feature-card p-4 text-center">
+                        <i class="fas fa-hd fa-3x text-success mb-4"></i>
+                        <h5>HD Quality</h5>
+                        <p class="text-muted">Save photos and videos in original high definition.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm feature-card p-4 text-center">
+                        <i class="fas fa-image fa-3x text-success mb-4"></i>
+                        <h5>Images &amp; Videos Tabs</h5>
+                        <p class="text-muted">Separate tabs for photos and videos like the original app.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm feature-card p-4 text-center">
+                        <i class="fas fa-play fa-3x text-success mb-4"></i>
+                        <h5>Built-in Player</h5>
+                        <p class="text-muted">Play saved videos offline directly in the browser.</p>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm feature-card p-4 text-center">
+                        <i class="fas fa-share-alt fa-3x text-success mb-4"></i>
+                        <h5>Easy Share &amp; Repost</h5>
+                        <p class="text-muted">Share or repost your saved statuses instantly.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How it Works -->
+    <section id="howto" class="py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h2 class="fw-bold text-success mb-5">How to Save Status in 3 Steps</h2>
+                    <div class="d-flex align-items-start mb-5">
+                        <div class="step-circle bg-success text-white me-4 flex-shrink-0">1</div>
+                        <div>
+                            <h5>Open &amp; View Status</h5>
+                            <p class="text-muted">Open WhatsApp and view the status you want to save.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start mb-5">
+                        <div class="step-circle bg-success text-white me-4 flex-shrink-0">2</div>
+                        <div>
+                            <h5>Paste Link or Use App</h5>
+                            <p class="text-muted">Copy the status link or let the tool detect available media.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-start">
+                        <div class="step-circle bg-success text-white me-4 flex-shrink-0">3</div>
+                        <div>
+                            <h5>Save &amp; Enjoy Offline</h5>
+                            <p class="text-muted">Download in HD and play or view anytime with built-in tools.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 d-flex align-items-center">
+                    <div class="bg-success text-white p-5 rounded-4 shadow w-100">
+                        <h4 class="mb-4"><i class="fas fa-mobile-alt me-3"></i>Experience Like the Original App</h4>
+                        <p class="lead">This web version brings the clean tab view, fast saving, and offline media experience of the popular Status Saver app directly to your browser.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Media Tabs Demo -->
+    <section id="media" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center fw-bold text-success mb-5">Images &amp; Videos Tabs</h2>
+            <ul class="nav nav-tabs justify-content-center mb-4" id="mediaTabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="images-tab" data-bs-toggle="tab" data-bs-target="#images" type="button">📸 Images</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="videos-tab" data-bs-toggle="tab" data-bs-target="#videos" type="button">🎥 Videos</button>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane fade show active" id="images">
+                    <div class="row g-3">
+                        <div class="col-6 col-md-4 col-lg-3"><img src="https://via.placeholder.com/300x300/166534/ffffff?text=Status+Photo+1" class="img-fluid rounded-3 shadow-sm" alt="Saved Status Photo"></div>
+                        <div class="col-6 col-md-4 col-lg-3"><img src="https://via.placeholder.com/300x300/166534/ffffff?text=Status+Photo+2" class="img-fluid rounded-3 shadow-sm" alt="Saved Status Photo"></div>
+                        <div class="col-6 col-md-4 col-lg-3"><img src="https://via.placeholder.com/300x300/166534/ffffff?text=Status+Photo+3" class="img-fluid rounded-3 shadow-sm" alt="Saved Status Photo"></div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="videos">
+                    <div class="text-center py-5">
+                        <p class="lead">Demo saved videos would appear here with play buttons and built-in player support.</p>
+                        <button class="btn btn-success" onclick="playDemoVideo()">Play Demo Video</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="fw-bold"><i class="fas fa-save me-2"></i>Status Saver</h5>
+                    <p class="small text-light-50">Free online WhatsApp status saver. Save photos and videos quickly and privately.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-1">Made with ❤️ by <strong>SAMER SAEID</strong> <a href="https://bio.link/samer" target="_blank" class="text-white">Made by ♥️</a></p>
+                    <p class="small text-light-50">Copyright SAMER SAEID © 2026. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Save Modal -->
+    <div class="modal fade" id="saveModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Saving Status...</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center py-5">
+                    <div id="processing">
+                        <div class="spinner-border text-success mb-4" style="width: 3.5rem; height: 3.5rem;"></div>
+                        <p id="modalMessage" class="lead">Detecting HD media from status...</p>
+                    </div>
+                    <div id="successDownload" class="d-none">
+                        <i class="fas fa-check-circle fa-4x text-success mb-4"></i>
+                        <p class="lead">Status saved successfully in HD!</p>
+                        <a id="downloadLink" href="#" class="btn btn-success btn-lg w-100" download>📥 Download File</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
